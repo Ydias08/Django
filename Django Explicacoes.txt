@@ -1,0 +1,42 @@
+Django - Alura
+
+Django - Orientado a Conteúdo (content-driven)
+	 Fácil para CRUD
+
+Processo Incial = 
+Crie o Ambiente Virtual
+ative o ambiente virtual
+instale o django
+
+podemos visualizar os comandos que o Django Fornece 
+digitando no terminal:
+django-admin help
+
+para um projeto inicial digite:
+django-admin startproject setup .
+#sendo o "setup" o nome do projeto
+
+para visualizar o projeto digite
+python manage.py runserver
+
+#clicando na url que aparece no terminal visualizaremos
+a pagina web indicando que a instalação foi bem sucedida
+
+para poder trazer alterações como linguagem e horário
+vá em settings em setup
+
+na hora de upar o codigo para o GitHub
+você deve instalar o python-dotenv
+crie outro arquivo chamado .env 
+pegue a secret key em setup/settings
+salve essa variavel no .env
+e faça o seguinte no settings
+junto com "from pathlib import path" adicione o os: ficará assim: "from pathlib import path, os"
+e faça isso também "from dotenv import load_dotenv"
+
+adicione o  load_dotenv()
+
+na variavél de SECRET KEY = str(os.getenv('SECRET_KEY'))
+
+crie o .gitignore para não enviar arquivos para o github
+
